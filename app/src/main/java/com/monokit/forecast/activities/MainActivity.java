@@ -260,11 +260,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Forecastie");
         final WebView webView = new WebView(this);
-        String about = "<p>1.0</p>" +
+        String about =
                 "<p>A lightweight, opensource weather app.</p>" +
                 "<p>Developed by <a href='mailto:timi_monoki@yahoo.com'>Monoki Timea</a></p>" +
-                "<p>Data provided by <a href='https://openweathermap.org/'>OpenWeatherMap</a></p>" +
-                "<p>Icons are <a href='https://erikflowers.github.io/weather-icons/'>Weather Icons</a>, by <a href='http://www.twitter.com/artill'>Lukas Bischoff</a> and <a href='http://www.twitter.com/Erik_UX'>Erik Flowers</a>, under the <a href='http://scripts.sil.org/OFL'>SIL OFL 1.1</a> licence.";
+                "<p>Data provided by <a href='https://openweathermap.org/'>OpenWeatherMap</a></p>";
         TypedArray ta = obtainStyledAttributes(new int[]{android.R.attr.textColorPrimary, R.attr.colorAccent});
         String textColor = String.format("#%06X", (0xFFFFFF & ta.getColor(0, Color.BLACK)));
         String accentColor = String.format("#%06X", (0xFFFFFF & ta.getColor(1, Color.BLUE)));
