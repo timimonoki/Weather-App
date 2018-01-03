@@ -78,7 +78,7 @@ public abstract class GenericRequestTask extends AsyncTask<String, String, TaskO
                     BufferedReader r = new BufferedReader(inputStreamReader);
 
                     int responseCode = urlConnection.getResponseCode();
-                    String line = null;
+                    String line;
                     while ((line = r.readLine()) != null) {
                         response += line + "\n";
                     }
@@ -161,8 +161,8 @@ public abstract class GenericRequestTask extends AsyncTask<String, String, TaskO
 
     private String getLanguage() {
         String language = Locale.getDefault().getLanguage();
-        if (language.equals("cs")) {
-            language = "cz";
+        if (!language.equals("en")) {
+            language = "en";
         }
         return language;
     }
