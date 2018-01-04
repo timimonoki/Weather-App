@@ -612,10 +612,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             }
             return true;
         }
-        if (id == R.id.action_map) {
-            Intent intent = new Intent(MainActivity.this, MapActivity.class);
-            startActivity(intent);
-        }
         if (id == R.id.action_graphs) {
             Intent intent = new Intent(MainActivity.this, GraphActivity.class);
             startActivity(intent);

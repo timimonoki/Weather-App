@@ -86,11 +86,6 @@
         </receiver>
 
         <activity
-            android:name="com.monokit.forecast.activities.MapActivity"
-            android:parentActivityName="com.monokit.forecast.activities.MainActivity"
-            android:theme="@style/AppTheme.NoStatusBar" />
-
-        <activity
             android:name="com.monokit.forecast.activities.GraphActivity"
             android:label="@string/action_graphs"
             android:parentActivityName="com.monokit.forecast.activities.MainActivity"
